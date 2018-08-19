@@ -1,4 +1,4 @@
-# Recursion-
+# Recursion
   These are a few problems I tried so as to familarize myself with recursion, a brief description of which is given below.
 
 ## Maze Problem :
