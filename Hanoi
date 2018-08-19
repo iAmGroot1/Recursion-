@@ -1,0 +1,9 @@
+class Hanoi{
+    
+    public static void solve(int n,int start,int end,int middle){
+        if(n==0)return;
+        solve(n-1,start,middle,end);
+        System.out.println(start+" to "+ end);
+        solve(n-1,middle,end,start);
+    }
+}
