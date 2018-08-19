@@ -1,0 +1,20 @@
+class PathFinder{
+
+    public static int finder(char[][] maze,int i,int j,int count){
+        try{
+            if(maze[i][j]=='*')return count;
+        }catch(ArrayIndexOutOfBoundsException e){
+            return Integer.MAX_VALUE;
+        }
+        if(maze[i][j]=='X')return Integer.MAX_VALUE;
+        if(maze[i][j]=='@')return Integer.MAX_VALUE;
+        maze[i][j] = '@';
+        int right = finder(maze,i+1,j,count+1);
+        int left = finder(maze,i-1,j,count+1);
+        int up = finder(maze,i,j+1,count+1);
+        int down = finder(maze,i,j-1,count+1);
+        maze[i][j]=' ';
+        return Math.min(Math.min(Math.min(right,left),up),down);
+    }
+
+} 
