@@ -1,5 +1,5 @@
 # Recursion-
-  These are a few problems I tried so as to familarize myself with recursion, a breif description of which is given below.
+  These are a few problems I tried so as to familarize myself with recursion, a brief description of which is given below.
 
 ## Maze Problem :
  A Maze is given as N*N binary matrix of blocks where source block is the upper left most block i.e., maze[0][0] and destination(food) block is lower rightmost block i.e., maze[N-1][N-1]. A rat starts from source and has to reach the destination. The rat can move only in any direction; forward, backward, left and right
@@ -33,3 +33,7 @@ INPUT(n) | OUTPUT
 - No disk can be placed on top of the smaller disk.
 
 This programme prints the (**minimum**)steps required to solve this puzzle. 
+
+**Example:**
+
+![GitHub Logo](/images.png)
