@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Bracket{
+    
+    static int sum=0;
+
+    public static void bracket(int n,int open,int close){
+       if(n==open && n==close){
+           sum++;
+       }
+       if(close>open)return;
+       if(open>n)return;
+       bracket(n,open+1,close);
+       bracket(n,open,close+1);
+       return;
+    }
+
+    public static void main(String[] agr){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(“Enter the number of sets of brackets”);
+        int br = sc.nextInt();
+        bracket(br,0,0);
+        System.out.println(sum);
+    }
+}
